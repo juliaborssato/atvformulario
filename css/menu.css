@@ -41,7 +41,7 @@
 }
 
 
-/*Menu responsivo*/
+
 input#checkmenu {
     display: none;
 
@@ -60,7 +60,7 @@ input#checkmenu {
     height: 100%;
 }
 
-/*para a navegação não encostar no título*/
+
 @media(max-width:1542px) {
     #menu ul li {
         font-size: 1.3em;
@@ -70,7 +70,7 @@ input#checkmenu {
 
 @media(max-width:800px) {
 
-    /*menu vai desaparecer*/
+   
     #menu {
         display: none;
         height: 150px;
@@ -88,7 +88,7 @@ input#checkmenu {
 
     }
 
-    /*Esconderemos a ul*/
+
     input#checkmenu~#menu ul {
         position: absolute;
         right: -100%;
@@ -112,7 +112,6 @@ input#checkmenu {
 
     }
 
-    /*para que a ul, escondida à direita, apareça*/
     @keyframes appear {
         100% {
             right: 0;
@@ -137,14 +136,12 @@ input#checkmenu {
         flex-wrap: wrap;
     }
 
-    /*Animação*/
-    /*Quando apertarmos o label, o menu vai aparecer*/
+
     input#checkmenu:checked~#menu {
         display: flex;
         backdrop-filter: blur(5px);
     }
 
-    /*para que rode quando clicar*/
     input#checkmenu:checked~label .menuburguer {
         display: flex;
         align-items: center;
@@ -172,9 +169,6 @@ input#checkmenu {
         display: block;
         content: '';
     }
-
-
-
 
 }
 
